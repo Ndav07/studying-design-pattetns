@@ -6,7 +6,7 @@ export default class View {
   label: Label 
   button: Button
 
-  constructor(widgetFactory: WidgetFactory ) {
+  constructor(widgetFactory: WidgetFactory) {
     this.label = widgetFactory.createLabel()
     this.button = widgetFactory.createButton()
   }
