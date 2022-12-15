@@ -7,7 +7,7 @@ import Invoice from "../../../src/behavioral/template_method/Invoice"
 import Water from "../../../src/behavioral/template_method/Wanter"
 import Whisky from "../../../src/behavioral/template_method/Whisky"
 
-describe('jkjkjkj, test invoice', () => {
+describe('Liskov Substitution Principle, test invoice', () => {
   it('should create incoive, with taxes', () => {
     const invoice = new Invoice()
     invoice.addItem(new Beer('Heineken', 10)) // 10% -> 1

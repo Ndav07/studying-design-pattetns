@@ -1,8 +1,12 @@
+// Encapsular uma solicitação como um objeto, o que lhe permite parametrizar outros 
+// objetos com diferentes solicitações, enfileirar ou registrar solicitações e 
+// implementar recursos de cancelamento de operações
+
 import Account from "../../../src/behavioral/command/Account"
 import CreditCommand from "../../../src/behavioral/command/CreditCommand"
 import DebitCommand from "../../../src/behavioral/command/DebitCommand"
 
-describe('Test account', () => {
+describe('Command, test account', () => {
   it('should create an account', () => {
     const account = new Account()
     const balance = account.getBalance()
